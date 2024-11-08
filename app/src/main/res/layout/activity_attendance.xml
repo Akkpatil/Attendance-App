@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/tealbg">
+
+    <!-- Text displaying the status -->
+    <TextView
+        android:id="@+id/attendanceStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="Mark attendance for the selected student"
+        android:textSize="18sp"
+        android:layout_gravity="center"/>
+
+    <!-- RecyclerView to display the student list -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/studentListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" /> <!-- Takes up the remaining space -->
+
+    <!-- Button to add student details -->
+    <Button
+        android:id="@+id/submitStudentButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Student Details"/>
+
+    <!-- Button to confirm attendance -->
+    <Button
+        android:id="@+id/confirmAttendanceButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirm Attendance" />
+
+    <!-- Button to generate attendance report -->
+    <Button
+        android:id="@+id/generateReportButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Generate Attendance Report" />
+
+    <!-- Logout Button -->
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:textColor="@android:color/white"
+        android:background="@drawable/logout_button_bg"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>
